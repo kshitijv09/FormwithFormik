@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*  height: 100vh; */
-  border: goldenrod solid 2px;
   background-color: #cbccd3;
 }
 .title {
@@ -31,4 +29,43 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+    margin-top: 50px;
+    letter-spacing: 20px;
+  }
+
+  .form-container {
+    width: 60%;
+    padding: 2em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .form-element {
+    margin-bottom: 30px;
+  }
+
+  .heading {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 370px) {
+  .title {
+    font-size: 1rem;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
