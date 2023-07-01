@@ -1,0 +1,34 @@
+.outer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*  height: 100vh; */
+  border: goldenrod solid 2px;
+  background-color: #cbccd3;
+}
+.title {
+  color: #3e9af6;
+  margin-top: 50px;
+  font-size: 3rem;
+  letter-spacing: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.form-container {
+  width: 30%;
+  border-radius: 20px;
+  padding: 1em 3em;
+  background-color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.form-element {
+  margin-bottom: 30px;
+}
+.heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
