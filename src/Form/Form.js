@@ -17,23 +17,38 @@ import {
 } from "@mui/material";
 
 const validationSchema = yup.object({
-  name: yup.string().required("Name is required"),
+  name: yup
+    .string()
+    .matches(/^[^0-9]*$/, "Name should not contain a number")
+    .required("Name is required"),
   address: yup.string().required("Address is required"),
   country: yup.string().required("Country is required"),
   gender: yup.string().required("Gender is required"),
   hobbies: yup.array().min(1, "Select at least one hobby/interest"),
 });
 
-const countries = ["USA", "Canada", "UK", "Australia", "India", "Others"];
+const countries = [
+  "Australia",
+  "Canada",
+  "England",
+  "India",
+  "Jamaica",
+  "Pakistan",
+  "USA",
+  "Other",
+];
 
 const genders = ["Male", "Female", "Other"];
 
 const hobbiesOptions = [
+  "Collecting",
   "Reading",
+  "Painting",
   "Travelling",
   "Cooking",
   "Sports",
   "Gardening",
+  "Others",
 ];
 
 const Form = () => {
